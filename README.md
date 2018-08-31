@@ -1,5 +1,0 @@
-# 6.5.3
-Key management—TCU initialization—Asymmetric
-These examples defines the interface and method to initialize a EFTPOS terminal cryptographic unit (TCU) remotely. In the context of this Standard, the term ‘initialization’ refers only to the initial set up of asymmetric cryptographic keying relationship between the TCU and the acquirer(s).
-The adoption of this samples should be recommended wherever secure, remote terminal initialization is required and where the TCU is not expected to be delivered via a sponsor’s facility. The intention of the standard is that it will only be used for the initialisation of EFTPOS terminal, with or without a pin pad.  The usage of ANSI X9.24 part 2 might be more appropriate to use with ATM machines, or other terminals that need an initial symmetric key, using asymmetric techniques.  
-This examples shall be used in conjunction with the key management scheme requirements in AS 2805.6.2, Electronic funds transfer—Requirements for interfaces, Part 6.2, Key management—Transaction keys and AS 2805.6.4, Electronic funds transfer—Requirements for interfaces, Part 6.4, Key management—Session keys—Terminal to the acquirer.
