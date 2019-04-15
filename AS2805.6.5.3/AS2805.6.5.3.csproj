@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -47,6 +50,9 @@
     <Compile Include="DESAES.cs" />
     <Compile Include="Format.cs" />
     <Compile Include="HashMAC.cs" />
+    <Compile Include="ISO20038.cs" />
+    <Compile Include="KeyBlockHeader.cs" />
+    <Compile Include="KeyDerivationBlock.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Signature.cs" />
@@ -56,12 +62,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <Compile Include="Pad.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Crypto\crypto.Net45.csproj">
-      <Project>{45473847-8af8-4baf-b768-442c6875b8cf}</Project>
-      <Name>crypto.Net45</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
